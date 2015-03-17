@@ -1,0 +1,19 @@
+<h1>Show That Shit</h1>
+<div class="row" id="image_show">
+ <div class="col-md-8 col-md-offset-2">
+  <div class="panel panel-default">
+<p><%= image_tag(@post.image_url) %></p>
+
+<p><%= @post.emoticon_id %><p>
+<p><%= @post.language_id %><p>
+<p><%= @post.user.created_at %><p>
+
+<div class="col-md-6">
+  <div class="btn-group pull-right">
+    <%= link_to like_post_path(@post), method: :put, class: "btn btn-default" do %>
+      <span class="glyphicon glyphicon-heart">
+        <%= @post.get_upvotes.size %>
+      </span>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<h1>Preview</h1>
+<div class="row" id="image_show">
+ <div class="col-md-8 col-md-offset-2">
+  <div class="panel panel-default">
+	<%= image_tag(@url) %>
+	</div>
+<button type="btn-primary"><%= link_to "Generate New Image", preview_path %></button>
+<br/>
+<div class="panel-footer">
+<div class="row">
+  <div class="col-md-6">
+    <p>
+	<%= session[:emoticon_id] %>
+	</p>
+	<p>
+	<%= session[:language_id] %>
+	<p>
+</div>
+<div class="col-md-6">
+            <div class="btn-group pull-right">
+              <%= link_to "Create Post", posts_path, method: :post, class: "btn btn-default" %>
+                <span class="glyphicon glyphicon-heart"></span>
+
+              </div>
+
+
+  </div>
+

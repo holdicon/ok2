@@ -1,0 +1,18 @@
+<h1>Copy</h1>
+
+<%= form_for(@post, url: graphics_sessions_path) do |f| %>
+
+  <p>
+    <%= f.label :emoticon_id %>
+    <%= f.text_field :emoticon_id %>    
+  </p>
+
+  <p>
+    <%= f.label :language_id %>
+    <%= f.text_field :language_id %>    
+  </p>
+
+
+
+  <%= f.submit %>
+<% end %>

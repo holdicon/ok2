@@ -1,0 +1,19 @@
+<h1>Make Yourself Heard!!</h1>
+
+<%= form_for(@post, url: copy_sessions_path) do |f| %>
+
+ <div class="form-group">
+    <%= f.label :top_copy, class: 'form-control' %>
+    <%= f.text_field :top_copy, class: 'form-control' %>    
+  </div>
+
+ <div class="form-group">
+    <%= f.label :bottom_copy %>
+    <%= f.text_field :bottom_copy %>    
+  </div>
+
+  <%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
+
+
+  

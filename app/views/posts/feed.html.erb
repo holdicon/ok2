@@ -1,0 +1,15 @@
+<h1>Feed</h1>
+
+<ol>
+<div class="container-fluid">
+<% @posts.each do |post| %>
+
+<div class="col-xs-3 thumb">
+  <thumbnail><%= image_tag(post.image_url) %></thumbnail>
+  
+  </div>
+<% end %>
+</div>
+</ol>
+
+<p><%= link_to "New Post", new_post_path %></p>
